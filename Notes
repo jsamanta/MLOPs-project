@@ -1,0 +1,28 @@
+Youtube link for tutorial: https://www.youtube.com/watch?v=Rv6UFGNmNZg
+
+Steps to perform:
+
+1. Create github repository (public)
+2. Create a folder and open Vscode
+3. Create an environment with below command inside the terminal of vscode:
+    "conda create -p venv python==3.8 -y"
+4. Activate the env using: conda activate venv/ (Running under cmd and not in powershell)
+5. Initialize git repo using: 
+    echo "# mlproject" >> README.md
+    git init
+    git add README.md
+    git commit -m "first commit"
+    git branch -M main
+    git remote add origin https://github.com/jsamanta/mlproject.git
+    For first time users need to do git global: 
+        https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration 
+        Verify using : git config --global user.email
+        If not set then use below commands
+        $ git config --global user.name "John Doe"
+        $ git config --global user.email johndoe@example.com
+    git push -u origin main
+6. Create .gitignore file and select python and commit the changes
+7. Create setup.py and requirements.txt files
+8. Create src folder an build the package
+
+    
